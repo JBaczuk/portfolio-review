@@ -129,13 +129,13 @@ This is an example of how to list things you need to use the software and how to
 
 
 To request a code review, follow these steps:
-1. Fork this portfolio-reviewsitory.
+1. Fork this repository.
 
 <img src="https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png" alt="Logo"  height="80">
 
-2. Replace all the contents of this portfolio-reviewsitory with the contents of your project (including this README).
+2. Replace all the contents of this repository with the contents of your project (including this README).
 
-3. Submit a Pull Request against this portfolio-reviewsitory.
+3. Submit a Pull Request against this repository.
 
 4. Leave any comments in the pull request with any background info and if you'd like me to review anything specifically.
 
