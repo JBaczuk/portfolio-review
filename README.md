@@ -138,6 +138,8 @@ To request a code review, follow these steps:
 3. Submit a Pull Request against this portfolio-reviewsitory.
 
 4. Leave any comments in the pull request with any background info and if you'd like me to review anything specifically.
+
+5. For multiple reviews, create a new branch on the fork and submit a separate PR.
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 
