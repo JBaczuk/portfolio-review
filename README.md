@@ -87,7 +87,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This serves as a portfolio-reviewsitory against which pull requests can be made in order to use Github's code review features.
+This serves as a Repository against which pull requests can be made in order to use Github's code review features.
 
 
 <!-- ### Built With
