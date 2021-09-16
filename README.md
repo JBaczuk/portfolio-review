@@ -1,6 +1,6 @@
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
+*** that would make this better, please fork the portfolio-review and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
@@ -46,7 +46,7 @@
     <br />
     <!-- <a href="https://github.com/jbaczuk/portfolio-review">View Demo</a>
     ·
-    <a href="https://github.com/jbaczuk/portfolio-review/issues">Report Bug</a>
+    <a href="https://github.com/jbaczuk/portfolio-review/issues">portfolio-reviewrt Bug</a>
     · -->
     <a href="https://github.com/jbaczuk/portfolio-review/issues">Request Feature</a>
   </p>
@@ -87,7 +87,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This serves as a repository against which pull requests can be made in order to use Github's code review features.
+This serves as a portfolio-reviewsitory against which pull requests can be made in order to use Github's code review features.
 
 
 <!-- ### Built With
@@ -113,7 +113,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
+1. Clone the portfolio-review
    ```sh
    git clone https://github.com/jbaczuk/portfolio-review.git
    ```
@@ -129,13 +129,13 @@ This is an example of how to list things you need to use the software and how to
 
 
 To request a code review, follow these steps:
-1. Fork this repository.
+1. Fork this portfolio-reviewsitory.
 
 <img src="https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png" alt="Logo"  height="80">
 
-2. Replace all the contents of this repository with the contents of your project (including this README).
+2. Replace all the contents of this portfolio-reviewsitory with the contents of your project (including this README).
 
-3. Submit a Pull Request against this repository.
+3. Submit a Pull Request against this portfolio-reviewsitory.
 
 4. Leave any comments in the pull request with any background info and if you'd like me to review anything specifically.
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
@@ -191,15 +191,15 @@ Project Link: [https://github.com/jbaczuk/portfolio-review](https://github.com/j
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jbaczuk/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jbaczuk/portfolio-review.svg?style=for-the-badge
 [contributors-url]: https://github.com/jbaczuk/portfolio-review/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jbaczuk/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/jbaczuk/portfolio-review.svg?style=for-the-badge
 [forks-url]: https://github.com/jbaczuk/portfolio-review/network/members
-[stars-shield]: https://img.shields.io/github/stars/jbaczuk/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/jbaczuk/portfolio-review.svg?style=for-the-badge
 [stars-url]: https://github.com/jbaczuk/portfolio-review/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jbaczuk/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/jbaczuk/portfolio-review.svg?style=for-the-badge
 [issues-url]: https://github.com/jbaczuk/portfolio-review/issues
-[license-shield]: https://img.shields.io/github/license/jbaczuk/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/jbaczuk/portfolio-review.svg?style=for-the-badge
 [license-url]: https://github.com/jbaczuk/portfolio-review/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jbaczuk
