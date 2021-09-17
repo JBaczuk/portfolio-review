@@ -27,8 +27,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -77,6 +75,7 @@
     <li><a href="#license">License</a></li>
     <!-- <li><a href="#contact">Contact</a></li> -->
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
+    <li><a href="#testimonials">Testimonials</a></li>
   </ol>
 </details>
 
@@ -187,7 +186,11 @@ Project Link: [https://github.com/jbaczuk/portfolio-review](https://github.com/j
 * []()
 * []() -->
 
+<!-- TESTIMONIALS -->
 
+## Testimonials
+
+![testimonials](https://user-images.githubusercontent.com/8162417/133844354-556c8cc7-8d33-4fcb-9ffc-dd4bea234cfc.png)
 
 
 
