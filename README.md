@@ -138,7 +138,9 @@ To request a code review, follow these steps:
 
 4. Leave any comments in the pull request with any background info and if you'd like me to review anything specifically.
 
-5. For multiple reviews, create a new branch on the fork and submit a separate PR.
+Notes
+- For multiple reviews, create a new branch on the fork and submit a separate PR.
+- When the review is done, you can make changes and push to the same branch to get another review.
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 
