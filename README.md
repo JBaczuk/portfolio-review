@@ -36,7 +36,7 @@
     <kbd><img src="https://media-exp1.licdn.com/dms/image/C4E03AQGsy7ElKZ5pvA/profile-displayphoto-shrink_800_800/0/1605204832607?e=1637193600&v=beta&t=9TTbbE2N__F9G36KCk3PTl1gIWGPTeT9HKsUD6wN_lE" alt="Logo"  height="80" width="auto"></kbd>
   </a>
 
-  <h3 align="center">Code Reviews</h3>
+  <h3 align="center">Get a Portfolio Review</h3>
 
   <p align="center">
     Get your code reviewed by Jordan Baczuk, Senior Developer
