@@ -140,7 +140,7 @@ To request a code review, follow these steps:
 
 Notes
 - For multiple reviews, create a new branch on the fork and submit a separate PR.
-- When the review is done, you can make changes and push to the same branch to get another review.
+- When the review is done, you can make changes and push to the same branch and request a second review.
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 
