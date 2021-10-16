@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+/* Bootstrap 5 Documentation CAROUSEL
+-------------------------------------------------- */
+.carousel-item {
+    height: 38rem;
+    background: gray;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.7; */
+}
+
+#img-1 {
+    background-image: url("https://images.unsplash.com/photo-1565478441918-ba8d56c559a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+}
+
+#img-2 {
+    background-image: url("https://images.unsplash.com/photo-1522717887140-b78153b59e52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1955&q=80");
+}
+
+#img-3 {
+    background-image: url("https://images.unsplash.com/photo-1512148709442-eee63c4f5326?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
+
+
+@media only screen and (max-width: 600px) {
+    .carousel-item{
+        height: 28rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #hip {
+        order: 2;
+    }
+    #hip-img {
+        order: 1;
+    }
+    #second-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #pop {
+        order: 2;
+    }
+    #pop-img {
+        order: 1;
+    }
+    #third-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #jazz {
+        order: 2;
+    }
+    #jazz-img {
+        order: 1;
+    }
+    #fourth-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #country {
+        order: 2;
+    }
+    #country-img {
+        order: 1;
+    }
+    #btn-c {
+        display: block;
+    }
+    #title-c {
+        text-align: center;
+    }
+    #news-button {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #docu-img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #docu-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    #mobile-song {
+        text-align: center;
+    }
+}
+
+#select-form {
+    width: 100%;
+}
+
+
+.text {
+    text-indent: 50px;
+}
+
+#title-c {
+    text-align: center;
+}
+
+

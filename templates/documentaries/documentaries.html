@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+    <h2 class="pb-2 display-5 fw-bold text-center text-white" 
+        style="padding-top: 50px; margin-bottom: 40px;">
+        Documentaries
+    </h2>
+
+    <div class="container d-flex justify-content-center"
+         style="margin-bottom: 50px;">
+      <form method="POST" action="/documentaries">
+          <select class="form-select" 
+                  id="select-form"
+                  aria-label="Default select example"
+                  required
+                  name="select" 
+                  onchange="this.form.submit()">
+           <option selected disabled>Genres</option>
+           <option value="jazz">Jazz</option>
+           <option value="blues">Blues</option>
+           <option value="hip-hop">Hip-Hop</option>
+           <option value="pop">Pop</option>
+           <option value="rock">Rock</option>
+           <option value="country">Country</option>
+         </select>
+      </form>
+    </div>
+  
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    {% for film in documentaries %}
+    <div class="col">
+        <div class="card-header text-center text-white">
+            {{ film.Title }}
+            <!-- <i class="fas fa-star" style="color: yellow;"></i> -->
+        </div>
+      <a href="{{film.imdbID}}">
+        <img src="{{film.Poster}}" 
+             class="card-img" 
+             id="docu-img"
+             alt="documentaries"
+             width="300px"
+             height="400px"
+             onerror="this.onerror=null; this.src='https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg';">
+      </a>
+    </div>  
+    {% endfor %}
+  </div>
+
+
+
+{% endblock %}

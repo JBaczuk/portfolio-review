@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="" style="padding-top: 100px; padding-bottom: 50px;">
+    <div class="search-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="content">
+              <h1 class="text-center text-white">
+                Events
+              </h1>
+                <h6 class="content-tuned text-center text-white">
+                  Search for Venues, Artists or Events
+                </h6>
+                <form id="text">
+                  <div class="input-group"> 
+                    <input type="text" 
+                           class="form-control"
+                           id="g"
+                           name="events_input"
+                           placeholder="Search for Venues, Artists or Events"
+                           required> 
+                      <span class="input-group-btn"> 
+                        <button class="btn btn-outline-light">
+                            Search
+                        </button>
+                    </div>
+                </form>
+              </div>
+           </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Events -->
+<div class="container">
+{% for event in results %}
+<div class="row g-0">
+    <div class="col-md-4" 
+       style="padding-top: 50px;">
+    <img src="{{event.images[0].url}}" 
+         class="img-fluid rounded-start" 
+         alt="events"
+         width="500px"
+         onerror="this.onerror=null; this.src='https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg';">
+    </div>
+
+  <div class="col-md-8" style="padding-top: 30px;">
+    <div class="card-body">
+      <h3 class="card-title text-white">{{event.name}}</h3>
+      <h4 class="card-title text-white">{{event.dates.localDate}}</h4>
+      <h4 class="card-title text-white">{{event.info}}</h4>
+      <p class="card-text">{{event.pleaseNote}}</p>
+        <a href="{{event.url}}"
+           id="news-button" 
+           class="btn btn-outline-light">
+           Buy Now!!!
+        </a>
+   </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="image" property="og:image" content="https://cdn.pixabay.com/photo/2016/06/06/09/57/clef-1439137_1280.jpg">
+	<title>Music History</title>
+	<!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+        
+  <link rel="stylesheet" 
+        type="text/css" 
+        href="../public/css/styles.css">
+
+        <!-- <link rel="shortcut icon" type="image/png" href="public/favicon.png"> -->
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+<div id="data">
+  {% block content %}
+   <!-- put the content here -->
+  {% endblock %}
+</div>
+
+
+
+
+<footer class="footer py-3 bg-dark" style="margin-top: 500px;">
+  <div class="container">
+    <p class="text-center">
+      <a href="#" style="color: azure;">Back to top</a>
+    </p>
+    <p class="text-center" style="color: azure; font-size: 24px; ">
+        Music History &copy; 2021
+    </p>
+  </div>
+</footer>
+
+  <!-- JS Only -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" 
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" 
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" 
+        crossorigin="anonymous">
+</script>
+
+<script src="../public/js/media.js"></script>
+
+</body>
+</html>

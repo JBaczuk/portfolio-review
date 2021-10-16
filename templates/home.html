@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="myCarousel" 
+     class="carousel slide" 
+     data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" 
+              data-bs-target="#myCarousel" 
+              data-bs-slide-to="0" 
+              class="active" 
+              aria-current="true" 
+              aria-label="Slide 1">
+      </button>
+      <button type="button" 
+              data-bs-target="#myCarousel" 
+              data-bs-slide-to="1" 
+              aria-label="Slide 2">
+      </button>
+      <button type="button" 
+              data-bs-target="#myCarousel" 
+              data-bs-slide-to="2" 
+              aria-label="Slide 3">
+      </button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="img-1">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Music History</h1>
+            <p>The Voices that changed the world.</p>
+            <p>
+                <a class="btn btn-outline-light" 
+                   href="/artists">
+                   Checkout Artists
+                </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" id="img-2">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Songs</h1>
+            <p>The songs that define ourlives</p>
+            <p>
+                <a class="btn btn-outline-light" 
+                   href="/songs">
+                   Checkout Songs
+                </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" id="img-3">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Passion</h1>
+            <p>The will to be great like them</p>
+            <p>
+                <a class="btn btn-outline-light" 
+                   href="/documentaries">
+                   Checkout the Documentaries
+                </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#myCarousel" 
+            data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" 
+            aria-hidden="true">
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#myCarousel" 
+            data-bs-slide="next">
+      <span class="carousel-control-next-icon" 
+            aria-hidden="true">
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- About Section -->
+
+ <div class="container">
+    <div class="h-100 p-5 text-white rounded-3 text-center"
+         style="margin-top: 100px;">
+      <h2 class="text-center">About</h2>
+      <p class="text-center">
+          Music History is a site dedicated to providing the public
+          information on the history of music. Ranging from the different
+          types of genres, artists and songs. In addition, this site
+          provides information on current events such as concerts and news
+          on the music industry.
+      </p>
+      <center>
+        <a class="btn btn-outline-light" 
+           href="/events">
+           Events
+        </a>
+        &nbsp;
+        <a class="btn btn-outline-light" 
+           href="/news">
+           News 
+        </a>
+      </center>
+    </div>
+</div>
+
+
+<!-- Hip Hop -->
+
+<div class="h-100 p-5 text-white rounded-3 text-center"
+     style="margin-top: 100px;">
+    <h2 class="text-center">
+        Genres
+    </h2>
+</div>
+
+<div class="container" style="margin-top: 150px;">
+  <div class="row align-items-md-stretch" id="wrap">
+    <div class="col-md-6" id="hip">
+      <div class="p-5 text-white rounded-3">
+        <h2 id="title-c">Hip-Hop</h2>
+        <p>
+          Hip hop music, also known as rap music, is a genre of popular music 
+          developed in the United States by inner-city African Americans and 
+          Latino Americans in the Bronx borough of New York City in the 1970s. 
+          It consists of a stylized rhythmic music that commonly accompanies 
+          rapping, a rhythmic and rhyming speech that is chanted. 
+          It developed as part of hip hop culture, a subculture defined by four 
+          key stylistic elements: MCing/rapping, DJing/scratching with turntables, 
+          break dancing, and graffiti writing. 
+        </p>
+        <center>
+        <a class="btn btn-outline-light"
+           id="btn-c"  
+           href="/hip-hop">
+           Learn More... 
+        </a>
+        </center>
+      </div>
+    </div>
+    <div class="col-md-6" id="hip-img">
+        <img src="https://wallpaperaccess.com/full/671918.jpg" 
+             class="img-fluid" 
+             alt="image">
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- R&B -->
+
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <img src="https://s2.favim.com/orig/29/beautiful-beyonce-black-and-white-Favim.com-242252.jpg" 
+            class="img-fluid" 
+            alt="image">
+      </div>
+      <div class="col-md-6">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">R&B</h2>
+            <p>
+              Rhythm and blues, often abbreviated as R&B or R'n'B, is a genre of 
+              popular music that originated in African-American communities in 
+              the 1940s. The term was originally used by record companies to 
+              describe recordings marketed predominantly to urban African Americans, 
+              at a time when "urbane, rocking, jazz based music with a heavy, 
+              insistent beat" was becoming more popular. In the commercial rhythm 
+              and blues music typical of the 1950s through the 1970s, the bands 
+              usually consisted of piano, one or two guitars, bass, drums, one or 
+              more saxophones, and sometimes background vocalists. 
+           </p>
+        <center>
+        <a class="btn btn-outline-light"
+           id="btn-c"  
+           href="/r&b">
+           Learn More... 
+        </a>
+        </center>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- POP -->
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch" id="second-wrap">
+      <div class="col-md-6" id="pop">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">Pop</h2>
+          <p>
+            Pop is a genre of popular music that originated in its modern form 
+            during the mid-1950s in the United States and the United Kingdom.
+            The terms popular music and pop music are often used interchangeably, 
+            although the former describes all music that is popular and includes 
+            many disparate styles. During the 1950s and 1960s, pop music 
+            encompassed rock and roll and the youth-oriented styles it influenced. 
+            Rock and pop music remained roughly synonymous until the late 1960s, 
+            after which pop became associated with music that was more commercial, 
+            ephemeral, and accessible.
+          </p>
+          <center>
+          <a class="btn btn-outline-light"
+             id="btn-c"  
+             href="/pop">
+             Learn More... 
+          </a>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-6" id="pop-img">
+          <img src="http://blog.aishti.com/wp-content/uploads/2015/10/ladygaga.jpg" 
+               class="img-fluid" 
+               alt="image">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- BLUES -->
+
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <img src="https://cdn.wegow.com/media/artists/bb-king/bb-king-1523356609.28.2560x1440.jpeg" 
+            class="img-fluid" 
+            alt="image">
+      </div>
+      <div class="col-md-6">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">Blues</h2>
+            <p>
+              Blues is a music genre and musical form which was originated in 
+              the Deep South of the United States around the 1860s by 
+              African-Americans from roots in African-American work songs, 
+              and spirituals. Blues incorporated spirituals, work songs, field 
+              hollers, shouts, chants, and rhymed simple narrative ballads. 
+              The blues form, ubiquitous in jazz, rhythm and blues and rock and 
+              roll, is characterized by the call-and-response pattern, the blues 
+              scale and specific chord progressions, of which the twelve-bar blues is 
+              the most common. 
+           </p>
+        <center>
+        <a class="btn btn-outline-light"
+           id="btn-c"  
+           href="/blues">
+           Learn More... 
+        </a>
+        </center>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- JAZZ -->
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch" id="third-wrap">
+      <div class="col-md-6" id="jazz">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">Jazz</h2>
+          <p>
+            Jazz is a music genre that originated in the African-American 
+            communities of New Orleans, Louisiana, United States, in the late 19th 
+            and early 20th centuries, with its roots in blues and ragtime.
+            Since the 1920s Jazz Age, it has been recognized as a major form of 
+            musical expression in traditional and popular music, linked by the 
+            common bonds of African-American and European-American musical parentage.
+            Jazz is characterized by swing and blue notes, complex chords, call and 
+            response vocals, polyrhythms and improvisation. Jazz has roots in 
+            West African cultural and musical expression, and in African-American 
+            music traditions
+          </p>
+          <center>
+          <a class="btn btn-outline-light"
+             id="btn-c"  
+             href="/jazz">
+             Learn More... 
+          </a>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-6" id="jazz-img">
+          <img src="https://wallpaperaccess.com/full/2544606.jpg" 
+               class="img-fluid" 
+               alt="image">
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- ROCK -->
+
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/25/132274-Jimi_Hendrix.jpg" 
+            class="img-fluid" 
+            alt="image">
+      </div>
+      <div class="col-md-6">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">Rock</h2>
+            <p>
+              Rock music is a broad genre of popular music that originated as 
+              "rock and roll" in the United States in the late 1940s and early 
+              1950s, developing into a range of different styles in the mid-1960s 
+              and later, particularly in the United States and the United Kingdom.
+              It has its roots in 1940s and 1950s rock and roll, a style that drew 
+              directly from the blues and rhythm and blues genres of African-American 
+              music and from country music. Rock music also drew strongly from a number 
+              of other genres such as electric blues and folk, and incorporated influences 
+              from jazz, classical, and other musical styles. 
+           </p>
+        <center>
+        <a class="btn btn-outline-light"
+           id="btn-c" 
+           href="/rock">
+           Learn More... 
+        </a>
+        </center>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Country -->
+
+   <div class="container" style="margin-top: 150px;">
+    <div class="row align-items-md-stretch" id="fourth-wrap">
+      <div class="col-md-6" id="country">
+        <div class="p-5 text-white rounded-3">
+          <h2 id="title-c">Country</h2>
+          <p>
+            A country is a distinct territorial body or political entity 
+            (i.e. a nation). It is often referred to as the land of an individual's 
+            birth, residence or citizenship. A country may be an independent 
+            sovereign state or part of a larger state, as a non-sovereign or 
+            formerly sovereign political division, a physical territory with a 
+            government, or a geographic region associated with sets of previously 
+            independent or differently associated people with distinct political 
+            characteristics. It is not inherently sovereign.
+          </p>
+          <center>
+          <a class="btn btn-outline-light"
+             id="btn-c" 
+             href="/country">
+             Learn More... 
+          </a>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-6" id="country-img">
+          <img src="https://media.vanityfair.com/photos/5d950a4ffc4fc000082c615f/master/pass/dolly-parton-podcast-lede.jpg" 
+               class="img-fluid" 
+               alt="image">
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container" style="margin-top: 100px;">
+    <div class="search-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="content">
+              <h1 class="text-center text-white">
+                News
+              </h1>
+                <h6 class="content-tuned text-center text-white">
+                  Search for Music News
+                </h6>
+                <form id="text">
+                  <div class="input-group"> 
+                    <input type="text" 
+                           class="form-control"
+                           name="news_input"
+                           placeholder="Search for music news"
+                           required> 
+                      <span class="input-group-btn"> 
+                        <button class="btn btn-outline-light">
+                            Search
+                        </button>
+                    </div>
+                </form>
+              </div>
+           </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- News -->
+  {% for news in results %}
+  <div class="row g-0">
+    <div class="col-md-4" 
+       style="padding-top: 50px;">
+    <img src="https://www.nytimes.com/{{news.multimedia[0].url}}" 
+         class="img-fluid rounded-start" 
+         alt="news"
+         width="500px"
+         onerror="this.onerror=null; this.src='https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg';">
+    </div>
+
+  <div class="col-md-8" style="padding-top: 30px;">
+    <div class="card-body">
+      <h3 class="card-title text-white">Title: {{news.headline.main}}</h3>
+      <h4 class="card-title text-white">{{news.byline.original}}</h4>
+      <h4 class="card-title text-white">Source: {{news.source}}</h4>
+      <p class="card-text">{{news.abstract}}</p>
+        <a href="{{news.web_url}}"
+           id="news-button" 
+           class="btn btn-outline-light">
+           Full Story
+        </a>
+   </div>
+  </div>
+</div>
+{% endfor %}
+
+  
+
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<div class="container" style="margin-top: 100px;">
+    <div class="search-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="content">
+              <h1 class="text-center text-white">
+                Songs
+              </h1>
+                <h6 class="content-tuned text-center text-white">
+                  Enter song title and artist name
+                </h6>
+                <h6 class="content-tuned text-center text-white">
+                  Make sure you spelled correctly 
+                </h6>
+                <form id="text">
+                  <div class="input-group"> 
+                    <input type="text" 
+                           class="form-control"
+                           name="song_input"
+                           placeholder="Enter song"
+                           required> 
+                    <input type="text" 
+                           class="form-control"
+                           name="art_input"
+                           placeholder="Enter artist"
+                           required> 
+                      <span class="input-group-btn"> 
+                        <button class="btn btn-outline-light">
+                            Search
+                        </button>
+                    </div>
+                </form>
+              </div>
+           </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!-- Songs -->
+
+<div class="row g-0">
+  <div class="col-md-4" 
+       style="padding-top: 50px;">
+    <a href="{{url}}">
+      <img src="{{img}}" 
+         class="img-fluid rounded-start" 
+         id="docu-img"
+         alt="artist"
+         onerror="this.onerror=null; this.src='https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg';">
+    </a>
+    </div>
+
+  <div class="col-md-8" 
+       id = "mobile-song" 
+       style="padding-top: 30px;">
+    <div class="card-body">
+      <h3 class="card-title text-white">Name: {{name}}</h3>
+      <h4 class="card-title text-white">Track Title: {{title}}</h4>
+      <h4 class="card-title text-white">Listeners: {{listeners}}</h4>
+      <h4 class="card-title text-white">PlayCount: {{playcount}}</h4>
+      <span>
+        <p class="card-text">
+            {{tag1}} &nbsp; {{tag2}} &nbsp; {{tag3}} &nbsp; {{tag4}}
+        </p>
+      </span>
+      <p class="card-text" 
+         style="margin-top: 20px;">
+         {{content}} 
+      </p>
+   </div>
+  </div>
+</div>
+
+
+
+<!-- Youtube API -->
+
+
+
+
+
+
+<!-- Similar tracks -->
+<div class="container" style="margin-top: 50px;">
+  <h2 class="pb-2 border-bottom display-5 fw-bold text-center text-white" 
+      style="padding-top: 50px; margin-bottom: 100px;">
+      Similar Tracks
+  </h2>
+<div class="row row-cols-1 row-cols-md-5 g-4">
+  {% for song in similarTracks %}
+  <div class="col">
+      <div class="card-header text-center text-white">
+         {{ song.artist.name }}
+      </div>
+      <div class="card-header text-center text-white">
+          {{ song.name }}
+      </div>
+    <a href="{{song.url}}">
+      <img src="https://i0.wp.com/www.furnacemfg.com/wp-content/uploads/2015/02/vinyl.png?fit=350%2C350&ssl=1" 
+           class="card-img" 
+           id="docu-img"
+           alt="songs"
+           onerror="this.onerror=null; this.src='https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg';">
+    </a>
+      <div class="card-header text-center text-white">
+         Playcount: {{ song.playcount }}
+      </div>
+  </div>  
+  {% endfor %}
+</div>
+</div>
+
+
+{% endblock %}
