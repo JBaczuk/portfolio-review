@@ -1,0 +1,39 @@
+generate react app
+design
+
+using 
+https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/
+by the way
+
+generate express api
+npm install in the api folder
+set to different port to test in bin/www
+
+create new api route in js in /routes
+
+in main app.js create app.use
+similar to react component
+
+create var to get from new api route
+which sends info down to app.use
+
+npm start (in api folder)
+go to port then in address type /<new api route name>
+
+going to stop at 'fetching API with react'
+maybe there's a hook foor connecting api to react app?
+
+deploy using beanstalk
+
+
+10/22/2021
+React frontend, Express server, MongoDB database, Node backend
+
+React has hooks to manage state - use reducer hook to manage state of students
+get students from database using API calls from front {% endautoescape %}
+
+frontend calls server using REST API -> server calls database using fetch?
+
+After front end is ready, develop CRUD backend using GraphQL 
+implement into AWS using docker compose
+ 

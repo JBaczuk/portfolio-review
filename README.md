@@ -1,212 +1,42 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the portfolio-review and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** jbaczuk, portfolio-review, jbaczuk, jordan.baczuk@gmail.com, Portfolio Review, Portfolio Review
--->
+# pick-name
+App that retrieves your classes and names of students from those classes. Then chooses a name at random.
 
+## Vision
+Initially I want this to be an application. Probably a web app.
 
+Problem: Educators have some primitive methods to cold calling students. Whether it is tediously writing their names on 120 popsicle sticks (where do you get that many sticks anyways) or trying to call at random based on where they sit in the room. These are all ways that are biased and primitive. I want to make an application that simply chooses a name of a student in your class at random with no bias. The application first and foremost should be simple to set-up and extremely simple to use. 
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+## Goal 
+Open web app. Get names of classes. Get names of students in classes. Choose a class to have a student name from that class appear at random. Save all this data for next use. 
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://linkedin.com/in/jbaczuk">
-    <kbd><img src="https://media-exp1.licdn.com/dms/image/C4E03AQGsy7ElKZ5pvA/profile-displayphoto-shrink_800_800/0/1605204832607?e=1637193600&v=beta&t=9TTbbE2N__F9G36KCk3PTl1gIWGPTeT9HKsUD6wN_lE" alt="Logo"  height="80" width="auto"></kbd>
-  </a>
+## IO
+I want to build this as an application. Deployed and ready to use by other educators. 
 
-  <h3 align="center">Get a Portfolio Review</h3>
+Imputs
+  1. Number of classes should be imported or entered manually. 
+      Considering importing from pdf, txt, doc, csv, xls and saving to database.
+      There may be a better way. Need to do some research.
+  2. Names of students should also be imported or entered manually. 
+      As a start I can attempt extracting from text. Save to database.
+  3. Click on a class button with animation. 
+      Extend this with image of student if possible. 
 
-  <p align="center">
-    Get your code reviewed by Jordan Baczuk, Senior Developer
-    <br />
-    <!-- <a href="https://github.com/jbaczuk/portfolio-review"><strong>Explore the docs »</strong></a> -->
-    <!-- <br /> -->
-    <br />
-    <!-- <a href="https://github.com/jbaczuk/portfolio-review">View Demo</a>
-    ·
-    <a href="https://github.com/jbaczuk/portfolio-review/issues">portfolio-reviewrt Bug</a>
-    · -->
-    <a href="https://github.com/jbaczuk/portfolio-review/issues">Request Feature</a>
-  </p>
-</p>
+Outputs
+  1. Get a simple page to display class in form of buttons with class labeled as text.
+  2. Display random student name
 
+All this data should be saved so teacher can go back and choose again. 
 
+Extention: Random student groups generator. Can generate groups of 2 up to 6. 
+Extention: A random student cannot be called twice in a row until at leat 10 other students are called first.
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <!-- <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul> -->
-    </li>
-    <!-- <li>
-      <a href="#getting-started">How to Use</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li> -->
-    <li><a href="#usage">Usage</a></li>
-    <!-- <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li> -->
-    <li><a href="#license">License</a></li>
-    <!-- <li><a href="#contact">Contact</a></li> -->
-    <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
-    <li><a href="#testimonials">Testimonials</a></li>
-  </ol>
-</details>
+## How to run the code
+Option 1: Go to link https://pick-name.netlify.app
+Option 2: 
+  Clone the code into your preferred IDE (like VS code).
+  In terminal and directory of the project run 'npm i' (install npm dependencies).
+  In terminal run 'npm run start'.
+  The project will run in browser 'localhost:3000'.
+  
+Let me know if you have questions, comments, or suggestions on this. 
 
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
-This serves as a repository against which pull requests can be made in order to use Github's code review features.
-
-
-<!-- ### Built With
-
-* []()
-* []()
-* []() -->
-
-
-
-<!-- GETTING STARTED -->
-<!-- ## Getting Started
-
-To get a local copy up and running follow these simple steps. -->
-
-<!-- ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the portfolio-review
-   ```sh
-   git clone https://github.com/jbaczuk/portfolio-review.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ``` -->
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-
-To request a code review, follow these steps:
-1. Fork this repository.
-
-<img src="https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png" alt="Logo"  height="80">
-
-2. Replace all the contents of this repository with the contents of your project (including this README).
-
-3. Submit a Pull Request against this repository.
-
-4. Leave any comments in the pull request with any background info and if you'd like me to review anything specifically.
-
-Notes
-- For multiple reviews, create a new branch on the fork and submit a separate PR.
-- When the review is done, you can make changes and push to the same branch and request a second review.
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
-
-
-<!-- ROADMAP -->
-<!-- ## Roadmap
-
-See the [open issues](https://github.com/jbaczuk/portfolio-review/issues) for a list of proposed features (and known issues). -->
-
-
-
-<!-- CONTRIBUTING -->
-<!-- ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request -->
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@jbaczuk](https://twitter.com/jbaczuk) - jordan.baczuk@gmail.com
-
-Project Link: [https://github.com/jbaczuk/portfolio-review](https://github.com/jbaczuk/portfolio-review)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-<!-- ## Acknowledgements
-
-* []()
-* []()
-* []() -->
-
-<!-- TESTIMONIALS -->
-
-## Testimonials
-
-![testimonials](https://user-images.githubusercontent.com/8162417/133844354-556c8cc7-8d33-4fcb-9ffc-dd4bea234cfc.png)
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jbaczuk/portfolio-review.svg?style=for-the-badge
-[contributors-url]: https://github.com/jbaczuk/portfolio-review/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jbaczuk/portfolio-review.svg?style=for-the-badge
-[forks-url]: https://github.com/jbaczuk/portfolio-review/network/members
-[stars-shield]: https://img.shields.io/github/stars/jbaczuk/portfolio-review.svg?style=for-the-badge
-[stars-url]: https://github.com/jbaczuk/portfolio-review/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jbaczuk/portfolio-review.svg?style=for-the-badge
-[issues-url]: https://github.com/jbaczuk/portfolio-review/issues
-[license-shield]: https://img.shields.io/github/license/jbaczuk/portfolio-review.svg?style=for-the-badge
-[license-url]: https://github.com/jbaczuk/portfolio-review/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/jbaczuk
