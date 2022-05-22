@@ -1,0 +1,97 @@
+.about-page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   min-height: 100vh;
+ overflow: hidden;
+}
+.a-container{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 0;
+    width: 80%;
+}
+.ahead{
+    font-size: 53px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 40px;
+    color: #1BA098;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 4px;
+}
+.atext{
+    color: #1BA098;
+    font-family: 'Lato';
+    font-size: 24px;
+    
+    text-align: justify;
+    min-width:fit-content;
+    margin: 4px;
+}
+@media (max-width: 600px) {
+    .a-container{
+        margin-top: 15%;
+    }
+    .ahead{
+        font-size: 34px;
+        margin-left: 4px;
+    }
+    .atext{
+        font-size: 16px;
+        margin: 4px;
+    }
+    .aicons{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 16px;
+    }
+}
+.askills{
+    top: 1%;
+    left: 6%;
+    /* transform: translate(8%,20%); */
+    text-align: center;
+    overflow: hidden;
+}
+.s-head{
+    font-size: 26px;
+    color: #1BA098;
+}
+.m-skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skill{
+    margin-left: 2%;
+}
+.aicons{
+    font-size: 36px;
+    color:#1BA098;
+  
+}
+h4{
+    font-size: 26px;
+    color: #1BA098;
+}
+@media (max-width: 360px) {
+    .ahead{
+        font-size: 24px;
+        margin: 2%;
+    }
+    .atext{
+        font-size: 14px;
+        margin: 1%;
+    }
+    .aicons{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 12px;
+    }
+}
+
