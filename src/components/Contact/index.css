@@ -1,0 +1,130 @@
+.c-container{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    display: inline;
+    max-height: 50%;
+    margin-left: 15%;
+}
+.chead{
+    font-size: 53px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    color: #1BA098;
+    letter-spacing: 2px;
+}
+.ctext{
+    color:#1BA098;
+    font-family: 'Lato';
+    font-size: 28px;
+    min-width: fit-content;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.shead{
+    font-size: 24px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    color: #1BA098;
+    letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+    .chead{
+        font-size: 34px;
+    }
+    .ctext{
+        font-size: 16px;
+        margin: 3%;
+    }
+    input[type="text"], 
+    input[type="email"]
+    {
+        margin-left: 2px;
+        padding: 6px;
+        line-height: 12px;
+        margin-bottom: 7px;
+        width: 70%;
+    }
+    .ttext{
+        height: 70px;
+         width: 150px;
+    }
+    .flat-button{
+        width: 70%;
+    }
+}
+
+.cicon{
+    font-size: 30px;
+    color: #DEB992;
+    margin: 10%;
+}
+.form{
+    max-width: 420px;
+    margin: 50%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none; 
+}
+input{
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid  #DEB992;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+    color:#1BA098;
+    border-radius: 10px;
+}
+
+textarea{
+    height: 150px;
+   width: 250px;
+    resize:none;
+    background-color: transparent;
+    border:2px solid  #DEB992;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    outline: 0;
+    color:#1BA098;
+    border-radius: 10px;
+}
+.flat-button{
+    color:  #DEB992;
+    background: #1BA098;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 5%;
+    border: none;
+}
+.flat-button:hover{
+    text-decoration: underline;
+}

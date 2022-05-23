@@ -1,0 +1,88 @@
+.p-container{
+    margin-left: 4%;
+}
+.phead{
+    font-size: 53px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 40px;
+    color: #1BA098;
+    letter-spacing: 2px;
+}
+.pcont{
+    margin-left:1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    overflow: hidden;
+    width: 280px;
+    height: 380px;
+    box-shadow: 0 0 15px #DEB992;
+   border-radius: 5%;
+}
+.c-head{
+    text-align: center;
+    font-size:24px;
+    color: #1BA098;
+    margin: 2%;
+    letter-spacing: 2px;
+}
+.c-text{
+    text-align: justify;
+    margin: 2%;
+    font-size: 14px;
+    font-family: 'Lato';
+    color: #1BA098;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gicon{
+    margin: 5px;
+    font-size: 35px;
+    color: #1BA098;
+}
+.gicon:hover {
+    color: #DEB992;
+    
+}
+/* media screen */
+@media (max-width:600px){
+    .phead{
+        font-size: 34px;
+    }
+    .pcont{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 180px;
+        height: 280px;
+    }
+    img{
+        width:180px;
+    }
+    .c-head{
+        margin: 3%;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .c-text{
+        margin: 3%;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .gicon{
+        font-size: 20px;
+    }
+}
+.card:hover{
+  transform: scale(1.1);
+}
