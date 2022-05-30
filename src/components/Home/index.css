@@ -1,0 +1,106 @@
+:root{
+    --typewriteSpeed: 4s;
+    --typewriterCharater:15;
+    --bglt:  #1BA098;
+    --bgm:#051622;
+}
+.info-zone{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-zone{
+    margin: 0;
+    margin-left: 10%;
+    display: grid;
+   place-content: center;
+    text-align: center;
+}
+.mhead{
+    font-size: 3rem;
+    position: relative;
+    font-family: monospace;
+    color: #1BA098;
+    width: max-content;
+    background: var(--bgm);
+    display: block;
+    margin:auto;
+}
+.mhead::before,
+.mhead::after{
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+/* animation before heading  */
+.mhead::before{
+    background: var(--bgm);
+    animation: typewriter var(--typewriteSpeed) steps(var(--typewriterCharater)) 1s forwards;
+}
+@keyframes typewriter {
+    to{
+        left: 100%;
+    }
+}
+/* animation after heading  */
+.mhead::after{
+    width: 0.125em;
+    background: #1BA098;
+    animation: typewriter var(--typewriteSpeed) steps(var(--typewriterCharater)) 1s forwards,
+    blink 500ms steps(var(--typewriterCharater)) infinite;
+}
+@keyframes blink {
+    to{
+        background: transparent;
+    }
+}
+.mtext{
+    color:var(--bglt);
+    padding-top:20px;
+    font-size: 1rem;
+    font-family: 'Lato';
+    width:max-content;
+    position: relative;
+    opacity: 0;
+    font-weight:600;
+    text-transform: uppercase;
+    transform : translateY(4rem);
+    animation : fadeup 1s ease calc(var(--typewriteSpeed) + 2s) forwards;
+}
+/* animation of subheading */
+@keyframes fadeup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.pic{
+    margin-left: 10%;
+}
+.logo{
+    width:500px;
+    animation: hidesframes 10s ease infinite;
+}
+@keyframes hidesframes{
+    0% { opacity: 0; }
+  25% { opacity: 0; }
+50%{opacity: 0;}
+  75% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@media (max-width: 600px){
+    .info-zone{
+        flex-wrap: wrap;
+    }
+    .pic{
+        margin-top: 60%;
+    }
+    .logo{
+        margin-top: 10%;
+        width: 300px;
+    }
+}
