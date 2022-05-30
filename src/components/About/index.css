@@ -1,0 +1,73 @@
+.about-page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ahead{
+    font-size: 53px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 40px;
+    color: #1BA098;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 5px;
+}
+.atext{
+    color: #1BA098;
+    font-family: 'Lato';
+    font-size: 24px;
+    text-align: justify;
+    min-width:fit-content;
+    margin: 5px;
+}
+@media (max-width: 600px) {
+    .ahead{
+        font-size: 34px;
+    }
+    .atext{
+        font-size: 16px;
+        margin: 3%;
+    }
+}
+.askills{
+    margin-top: 1px;
+    top: 1%;
+    left: 6%;
+    transform: translate(8%,240%);
+    text-align: center;
+    overflow: hidden;
+}
+.s-head{
+    font-size: 26px;
+    color: #1BA098;
+}
+.m-skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skill{
+    margin: 5px;
+}
+.aicons{
+    font-size: 26px;
+    color:#1BA098;
+  
+}
+h4{
+    font-size: 16px;
+    color: #1BA098;
+}
+@media (max-width: 320px) {
+    .ahead{
+        font-size: 24px;
+    }
+    .atext{
+        font-size: 14px;
+        margin: 1%;
+    }
+}
+
